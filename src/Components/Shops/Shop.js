@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../Card/Card';
 import Products from '../Products/Products';
 import  './shop.css';
 const Shop = () => {
-    const [products,setproducts] = useState([]);
-    const [addcard,setAddcard] = useState([]);
+    const [products, setproducts] = useState([]);
+    const [addcard, setAddcard] = useState([]);
 
  //console.log(addcard);
     useEffect(
@@ -32,9 +33,8 @@ const Shop = () => {
 }
      </div>
             <div className="cart-container">
-
-                <p>Order Summary</p>
-                <p>click value {addcard.length}</p>
+            <Card card={addcard}></Card>
+                
             </div>
         </div>
     );
