@@ -1,0 +1,14 @@
+.twin-container{
+    display: flex;
+}
+.product-container{
+    display: flex;
+    gap: 25px;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 5px;
+    border-right: 1px solid lightgray;
+    margin-top: 13px;
+}
